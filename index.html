@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Fetch Example</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
+        *{
+            font-family: "Noto Sans Thai", sans-serif;
+        }
+    </style>
+    <div class="bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-2xl font-bold text-center text-gray-800 mb-4">ทดสอบการดึงข้อมูลผลการแข่งขันผ่าน API</h1>
+        <h6 class="text-center mb-6">การแข่งขันกีฬาระหว่างคณะ นาคาเกมส์ ครั้งที่ 43</h6>
+        
+        <div class="space-y-4">
+            <button id="button1" class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition">Fetch Medal-Ranking API</button>
+            <button id="button2" class="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition">Fetch Compet-Result API</button>
+            <button id="button3" class="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition">Fetch Sum-Compet-Result API</button>
+        </div>
+
+        <h6 class="text-center mt-8">ข้อมูลที่ดึงมาจะถูกแสดงผลใน console.log เท่านั้น</h6>
+        <h6 class="text-center mt-12">2024 &copy ธีรชานนท์ พวงเงิน</h6>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
